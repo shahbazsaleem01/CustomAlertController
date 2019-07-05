@@ -8,8 +8,6 @@ CustomAlertController for iOS
 
 CustomAlertController is an easy way to display a customized Alter. Library is inspired from UIAlertController and we tried to achieve the same functionality with same style.
 
-**Using Swift? A native swift port of this library is now available: [CustomAlertController](https://github.com/shahbazsaleem01/CustomAlertController "CustomAlertController")**
-
 Screenshots
 ---------
 ![Screenshots](iPad.png)
