@@ -10,8 +10,7 @@ CustomAlertController is an easy way to display a customized Alter. Library is i
 
 Screenshots
 ---------
-![Screenshots](https://github.com/shahbazsaleem01/CustomAlertController/blob/master/iPhone.png)
-![Screenshots](https://github.com/shahbazsaleem01/CustomAlertController/blob/master/iPad.png)
+![Screenshots](https://github.com/shahbazsaleem01/CustomAlertController/blob/master/Screenshot.png)
 
 Basic Examples
 ---------
