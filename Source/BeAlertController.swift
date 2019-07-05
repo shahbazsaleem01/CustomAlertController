@@ -218,7 +218,7 @@ public class BeAlertAction{
     public let title : String?
     fileprivate let handler : (_ action: BeAlertAction)-> Void
 
-    init(title: String?, style: Style, handler: @escaping (_ action: BeAlertAction) -> Void){
+    public init(title: String?, style: Style, handler: @escaping (_ action: BeAlertAction) -> Void){
         self.style = style
         self.title = title
         self.handler = handler
