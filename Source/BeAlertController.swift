@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BeAlertController: UIViewController {
+public class BeAlertController: UIViewController {
 
     lazy var backgroundColor = UIColor(hex: "949494")
     lazy var backgroundAlpha: CGFloat = 0.75
@@ -52,7 +52,7 @@ class BeAlertController: UIViewController {
         fatalError("Never happen")
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         
