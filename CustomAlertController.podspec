@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CustomAlertController"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "Provides easy way to make Customized Alert."
 
   s.description  = <<-DESC
