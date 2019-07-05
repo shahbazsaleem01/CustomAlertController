@@ -7,11 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047868FD22CF2D4000D616D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047868FC22CF2D4000D616D1 /* AppDelegate.swift */; };
+		047868FF22CF2D4000D616D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047868FE22CF2D4000D616D1 /* ViewController.swift */; };
+		0478690222CF2D4000D616D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0478690022CF2D4000D616D1 /* Main.storyboard */; };
+		0478690422CF2D4100D616D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0478690322CF2D4100D616D1 /* Assets.xcassets */; };
+		0478690722CF2D4100D616D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0478690522CF2D4100D616D1 /* LaunchScreen.storyboard */; };
+		0478690D22CF2DA900D616D1 /* CustomAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F6E75322CEE38C00A4F5B5 /* CustomAlertController.framework */; };
 		04F6E75822CEE38C00A4F5B5 /* CustomAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F6E75622CEE38C00A4F5B5 /* CustomAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04F6E75F22CEE3ED00A4F5B5 /* BeAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6E75E22CEE3ED00A4F5B5 /* BeAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		047868FA22CF2D4000D616D1 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		047868FC22CF2D4000D616D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		047868FE22CF2D4000D616D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0478690122CF2D4000D616D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0478690322CF2D4100D616D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0478690622CF2D4100D616D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0478690822CF2D4100D616D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04F6E75322CEE38C00A4F5B5 /* CustomAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F6E75622CEE38C00A4F5B5 /* CustomAlertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomAlertController.h; sourceTree = "<group>"; };
 		04F6E75722CEE38C00A4F5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -19,6 +32,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		047868F722CF2D4000D616D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0478690D22CF2DA900D616D1 /* CustomAlertController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04F6E75022CEE38C00A4F5B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,6 +50,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047868FB22CF2D4000D616D1 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				047868FC22CF2D4000D616D1 /* AppDelegate.swift */,
+				047868FE22CF2D4000D616D1 /* ViewController.swift */,
+				0478690022CF2D4000D616D1 /* Main.storyboard */,
+				0478690322CF2D4100D616D1 /* Assets.xcassets */,
+				0478690522CF2D4100D616D1 /* LaunchScreen.storyboard */,
+				0478690822CF2D4100D616D1 /* Info.plist */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		0478690C22CF2DA900D616D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		04D7CFB322CEFDCB00AA6E5A /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -42,7 +83,9 @@
 			children = (
 				04D7CFB322CEFDCB00AA6E5A /* Source */,
 				04F6E75522CEE38C00A4F5B5 /* CustomAlertController */,
+				047868FB22CF2D4000D616D1 /* Example */,
 				04F6E75422CEE38C00A4F5B5 /* Products */,
+				0478690C22CF2DA900D616D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				04F6E75322CEE38C00A4F5B5 /* CustomAlertController.framework */,
+				047868FA22CF2D4000D616D1 /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +121,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		047868F922CF2D4000D616D1 /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0478690B22CF2D4100D616D1 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				047868F622CF2D4000D616D1 /* Sources */,
+				047868F722CF2D4000D616D1 /* Frameworks */,
+				047868F822CF2D4000D616D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Example;
+			productName = Example;
+			productReference = 047868FA22CF2D4000D616D1 /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 		04F6E75222CEE38C00A4F5B5 /* CustomAlertController */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04F6E75B22CEE38C00A4F5B5 /* Build configuration list for PBXNativeTarget "CustomAlertController" */;
@@ -101,9 +162,13 @@
 		04F6E74A22CEE38C00A4F5B5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Saleems;
 				TargetAttributes = {
+					047868F922CF2D4000D616D1 = {
+						CreatedOnToolsVersion = 10.2;
+					};
 					04F6E75222CEE38C00A4F5B5 = {
 						CreatedOnToolsVersion = 10.2;
 						LastSwiftMigration = 1020;
@@ -116,6 +181,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 04F6E74922CEE38C00A4F5B5;
 			productRefGroup = 04F6E75422CEE38C00A4F5B5 /* Products */;
@@ -123,11 +189,22 @@
 			projectRoot = "";
 			targets = (
 				04F6E75222CEE38C00A4F5B5 /* CustomAlertController */,
+				047868F922CF2D4000D616D1 /* Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		047868F822CF2D4000D616D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0478690722CF2D4100D616D1 /* LaunchScreen.storyboard in Resources */,
+				0478690422CF2D4100D616D1 /* Assets.xcassets in Resources */,
+				0478690222CF2D4000D616D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04F6E75122CEE38C00A4F5B5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,6 +215,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		047868F622CF2D4000D616D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047868FF22CF2D4000D616D1 /* ViewController.swift in Sources */,
+				047868FD22CF2D4000D616D1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04F6E74F22CEE38C00A4F5B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,7 +234,64 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		0478690022CF2D4000D616D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0478690122CF2D4000D616D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0478690522CF2D4100D616D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0478690622CF2D4100D616D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		0478690922CF2D4100D616D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37N2EL26AG;
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.saleems.shahbaz.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0478690A22CF2D4100D616D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37N2EL26AG;
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.saleems.shahbaz.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		04F6E75922CEE38C00A4F5B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -329,6 +472,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0478690B22CF2D4100D616D1 /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0478690922CF2D4100D616D1 /* Debug */,
+				0478690A22CF2D4100D616D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		04F6E74D22CEE38C00A4F5B5 /* Build configuration list for PBXProject "CustomAlertController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
