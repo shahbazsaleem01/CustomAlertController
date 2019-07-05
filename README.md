@@ -3,7 +3,7 @@ CustomAlertController for iOS
 
 [![CocoaPods Version](https://img.shields.io/github/license/shahbazsaleem01/CustomAlertController.svg)](https://cocoapods.org/pods/CustomAlertController)
 [![ios version](https://img.shields.io/badge/ios-11.0-green.svg)](https://cocoapods.org/pods/CustomAlertController)
-[![pod version](https://img.shields.io/badge/pod-1.0.3-yellowgreen.svg)](https://cocoapods.org/pods/CustomAlertController)
+[![pod version](https://img.shields.io/badge/pod-1.0.4-yellowgreen.svg)](https://cocoapods.org/pods/CustomAlertController)
 [![swift version](https://img.shields.io/badge/swift-5.0-orange.svg)](https://cocoapods.org/pods/CustomAlertController)
 
 CustomAlertController is an easy way to display a customized Alter. Library is inspired from UIAlertController and we tried to achieve the same functionality with same style.
