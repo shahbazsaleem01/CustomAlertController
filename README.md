@@ -61,7 +61,7 @@ public var destructiveButtonFont: UIFont = UIFont.systemFont(ofSize: 14)
 Setup Instructions
 ------------------
 
-[CocoaPods](http://cocoapods.org)
+[CocoaPods](https://cocoapods.org/pods/CustomAlertController)
 ------------------
 
 Install with CocoaPods by adding the following to your `Podfile`:
