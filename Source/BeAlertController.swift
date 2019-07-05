@@ -10,27 +10,27 @@ import UIKit
 
 public class BeAlertController: UIViewController {
 
-    lazy var backgroundColor = UIColor(hex: "949494")
-    lazy var backgroundAlpha: CGFloat = 0.75
+    lazy public var backgroundColor = UIColor(hex: "949494")
+    lazy public var backgroundAlpha: CGFloat = 0.75
     
-    lazy var contentBackgroundColor = UIColor(hex: "ebebeb")
-    lazy var contentBackgroundCornerRadius: CGFloat = 10
+    lazy public var contentBackgroundColor = UIColor(hex: "ebebeb")
+    lazy public var contentBackgroundCornerRadius: CGFloat = 10
     
-    lazy var titleTextColor: UIColor = UIColor(hex: "211c45")
-    lazy var titleTextFont: UIFont =  UIFont.boldSystemFont(ofSize: 15)
+    lazy public var titleTextColor: UIColor = UIColor(hex: "211c45")
+    lazy public var titleTextFont: UIFont =  UIFont.boldSystemFont(ofSize: 15)
     
-    lazy var messageTextColor: UIColor = UIColor(hex: "211c45")
-    lazy var messageTextFont: UIFont = UIFont.systemFont(ofSize: 14)
+    lazy public var messageTextColor: UIColor = UIColor(hex: "211c45")
+    lazy public var messageTextFont: UIFont = UIFont.systemFont(ofSize: 14)
     
-    lazy var defaultButtonTextColor: UIColor = UIColor(hex: "ffffff")
-    lazy var defaultButtonBackgroundColor: UIColor = UIColor(hex: "f92f57")
-    lazy var defaultButtonCornerRadius: CGFloat = 5
-    lazy var defaultButtonFont: UIFont = UIFont.systemFont(ofSize: 14)
+    lazy public var defaultButtonTextColor: UIColor = UIColor(hex: "ffffff")
+    lazy public var defaultButtonBackgroundColor: UIColor = UIColor(hex: "f92f57")
+    lazy public var defaultButtonCornerRadius: CGFloat = 5
+    lazy public var defaultButtonFont: UIFont = UIFont.systemFont(ofSize: 14)
     
-    lazy var destructiveButtonTextColor: UIColor = UIColor(hex: "757575")
-    lazy var destructiveButtonBackgroundColor: UIColor = UIColor(hex: "cccccc")
-    lazy var destructiveButtonCornerRadius: CGFloat = 5
-    lazy var destructiveButtonFont: UIFont = UIFont.systemFont(ofSize: 14)
+    lazy public var destructiveButtonTextColor: UIColor = UIColor(hex: "757575")
+    lazy public var destructiveButtonBackgroundColor: UIColor = UIColor(hex: "cccccc")
+    lazy public var destructiveButtonCornerRadius: CGFloat = 5
+    lazy public var destructiveButtonFont: UIFont = UIFont.systemFont(ofSize: 14)
     
     private var message: String?
     private lazy var actions =  [BeAlertAction]()
@@ -182,7 +182,7 @@ public class BeAlertController: UIViewController {
         }
     }
     
-    func addAction(action: BeAlertAction){
+    public func addAction(action: BeAlertAction){
         actions.append(action)
     }
     
@@ -213,9 +213,9 @@ public class BeAlertController: UIViewController {
 
 }
 
-class BeAlertAction{
-    let style : Style
-    let title : String?
+public class BeAlertAction{
+    public let style : Style
+    public let title : String?
     fileprivate let handler : (_ action: BeAlertAction)-> Void
 
     init(title: String?, style: Style, handler: @escaping (_ action: BeAlertAction) -> Void){
@@ -224,7 +224,7 @@ class BeAlertAction{
         self.handler = handler
     }
     
-    enum Style{
+    public enum Style{
         case `default`
         case destructive
     }
