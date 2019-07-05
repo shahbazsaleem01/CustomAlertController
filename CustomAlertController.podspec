@@ -17,6 +17,6 @@ CustomKeyboardTextField provides easy way to make Customized Alert.
   s.platform     = :ios, "11.0"
 
   s.source       = { :git => "https://github.com/shahbazsaleem01/CustomAlertController.git", :tag => "#{s.version}" }
-  s.swift_versions = ['5.0']
+  s.swift_versions = ['4.2']
   s.source_files  = "CustomAlertController"
 end
