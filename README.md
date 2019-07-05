@@ -16,17 +16,17 @@ Basic Examples
 ---------
 ```swift
 // basic usage
-        let vc = BeAlertController(title: "title", message: "message")
-        vc.addAction(action: BeAlertAction(title: "Ok", style: .default, handler: { (action) in
-            
-        }) )
-        
-        
-        vc.addAction(action: BeAlertAction(title: "Cancel", style: .destructive, handler: { (action) in
-            
-        }))
-        
-        present(vc, animated: true, completion: nil)
+let vc = BeAlertController(title: "title", message: "message")
+vc.addAction(action: BeAlertAction(title: "Ok", style: .default, handler: { (action) in
+
+}) )
+
+
+vc.addAction(action: BeAlertAction(title: "Cancel", style: .destructive, handler: { (action) in
+
+}))
+
+present(vc, animated: true, completion: nil)
 ```
 
 But wait, there's more!
@@ -35,27 +35,27 @@ You can update following properties and customize
 
 ```swift
 // create a new style
-    public var backgroundColor = UIColor(hex: "949494")
-    public var backgroundAlpha: CGFloat = 0.75
-    
-    public var contentBackgroundColor = UIColor(hex: "ebebeb")
-    public var contentBackgroundCornerRadius: CGFloat = 10
-    
-    public var titleTextColor: UIColor = UIColor(hex: "211c45")
-    public var titleTextFont: UIFont =  UIFont.boldSystemFont(ofSize: 15)
-    
-    public var messageTextColor: UIColor = UIColor(hex: "211c45")
-    public var messageTextFont: UIFont = UIFont.systemFont(ofSize: 14)
-    
-    public var defaultButtonTextColor: UIColor = UIColor(hex: "ffffff")
-    public var defaultButtonBackgroundColor: UIColor = UIColor(hex: "f92f57")
-    public var defaultButtonCornerRadius: CGFloat = 5
-    public var defaultButtonFont: UIFont = UIFont.systemFont(ofSize: 14)
-    
-    public var destructiveButtonTextColor: UIColor = UIColor(hex: "757575")
-    public var destructiveButtonBackgroundColor: UIColor = UIColor(hex: "cccccc")
-    public var destructiveButtonCornerRadius: CGFloat = 5
-    public var destructiveButtonFont: UIFont = UIFont.systemFont(ofSize: 14)
+public var backgroundColor = UIColor(hex: "949494")
+public var backgroundAlpha: CGFloat = 0.75
+
+public var contentBackgroundColor = UIColor(hex: "ebebeb")
+public var contentBackgroundCornerRadius: CGFloat = 10
+
+public var titleTextColor: UIColor = UIColor(hex: "211c45")
+public var titleTextFont: UIFont =  UIFont.boldSystemFont(ofSize: 15)
+
+public var messageTextColor: UIColor = UIColor(hex: "211c45")
+public var messageTextFont: UIFont = UIFont.systemFont(ofSize: 14)
+
+public var defaultButtonTextColor: UIColor = UIColor(hex: "ffffff")
+public var defaultButtonBackgroundColor: UIColor = UIColor(hex: "f92f57")
+public var defaultButtonCornerRadius: CGFloat = 5
+public var defaultButtonFont: UIFont = UIFont.systemFont(ofSize: 14)
+
+public var destructiveButtonTextColor: UIColor = UIColor(hex: "757575")
+public var destructiveButtonBackgroundColor: UIColor = UIColor(hex: "cccccc")
+public var destructiveButtonCornerRadius: CGFloat = 5
+public var destructiveButtonFont: UIFont = UIFont.systemFont(ofSize: 14)
 ```
 
 Setup Instructions
