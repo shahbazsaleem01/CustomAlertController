@@ -16,7 +16,7 @@ Basic Examples
 ---------
 ```swift
 // basic usage
-let vc = BeAlertController(title: "title", message: "message")
+        let vc = BeAlertController(title: "title", message: "message")
         vc.addAction(action: BeAlertAction(title: "Ok", style: .default, handler: { (action) in
             
         }) )
