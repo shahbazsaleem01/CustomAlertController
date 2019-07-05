@@ -241,6 +241,7 @@ fileprivate extension UIColor {
         
         if ((cString.count) != 6) {
             self.init(red: 255, green: 255, blue: 255, alpha: 1)
+            return
         }
         
         var rgbValue:UInt32 = 0
