@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class BeAlertController: UIViewController {
+open class BeAlertController: UIViewController {
 
     lazy public var backgroundColor = UIColor(hex: "949494")
     lazy public var backgroundAlpha: CGFloat = 0.75
@@ -182,7 +182,7 @@ public class BeAlertController: UIViewController {
         }
     }
     
-    public func addAction(action: BeAlertAction){
+    public func addAction(_ action: BeAlertAction){
         actions.append(action)
     }
     
