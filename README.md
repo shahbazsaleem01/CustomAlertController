@@ -60,7 +60,7 @@ public var destructiveButtonFont: UIFont = UIFont.systemFont(ofSize: 14)
 
 You can also create a sub-class and use that Globally in your app, below is sample
 
-```
+```swift
 class GlobalAlertController: BeAlertController{
     override init(title: String?, message: String?) {
         super.init(title: title, message: message)
