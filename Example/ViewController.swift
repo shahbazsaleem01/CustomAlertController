@@ -13,15 +13,47 @@ class ViewController: UIViewController {
 
     @IBAction func didSelectShowAlert(_ sender: UIButton) {
         let vc = BeAlertController(title: "Custom Alert Controller", message: "Thank you for using custom alert controller, Hopefully you found it a smart help.\nDo let us know if you need any other feature.")
-        vc.addAction(action: BeAlertAction(title: "Got it", style: .default, handler: { (action) in
+        vc.addAction(BeAlertAction(title: "Got it", style: .default, handler: { (action) in
             
         }))
         
         
-        vc.addAction(action: BeAlertAction(title: "Cancel", style: .destructive, handler: { (action) in
+        vc.addAction(BeAlertAction(title: "Cancel", style: .destructive, handler: { (action) in
             
         }))
         
         present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func didSelectShowCustomizedController(_ sender: UIButton) {
+        
+        let vc = GlobalAlertController(title: "Custom Alert Controller", message: "Thank you for using custom alert controller, Hopefully you found it a smart help.\nDo let us know if you need any other feature.")
+        vc.addAction(BeAlertAction(title: "Got it", style: .default, handler: { (action) in
+            
+        }))
+        
+        
+        vc.addAction(BeAlertAction(title: "Cancel", style: .destructive, handler: { (action) in
+            
+        }))
+        
+        present(vc, animated: true, completion: nil)
+        
+    }
+    
+    
+}
+
+class GlobalAlertController: BeAlertController{
+    override init(title: String?, message: String?) {
+        super.init(title: title, message: message)
+        
+        //Do your customizations here
+        defaultButtonBackgroundColor = .blue
+        defaultButtonTextColor = .white
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
 }

@@ -19,17 +19,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSl-Dc-Uvq">
-                                <rect key="frame" x="169.5" y="433" width="75" height="30"/>
+                                <rect key="frame" x="169.5" y="383" width="75" height="30"/>
                                 <state key="normal" title="Show Alert"/>
                                 <connections>
                                     <action selector="didSelectShowAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YNM-kW-4LN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09d-he-dnd">
+                                <rect key="frame" x="130" y="463" width="154" height="30"/>
+                                <state key="normal" title="Show InApp Controller"/>
+                                <connections>
+                                    <action selector="didSelectShowCustomizedController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cxf-RP-egf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eSl-Dc-Uvq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8jo-qW-cUZ"/>
+                            <constraint firstItem="eSl-Dc-Uvq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="8jo-qW-cUZ"/>
+                            <constraint firstItem="09d-he-dnd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AN3-aS-Sm6"/>
                             <constraint firstItem="eSl-Dc-Uvq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QnH-L5-aGB"/>
+                            <constraint firstItem="09d-he-dnd" firstAttribute="top" secondItem="eSl-Dc-Uvq" secondAttribute="bottom" constant="50" id="tki-xg-QbI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
