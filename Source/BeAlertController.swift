@@ -48,8 +48,9 @@ open class BeAlertController: UIViewController {
     }
     
     //init?(coder aDecoder: NSCoder) called only when you create your views from storyboard. It will never be invoked since we are going with no-storyboard so we can safely fatal out.
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("Never happen")
+    
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
     
     override open func viewDidLoad() {
