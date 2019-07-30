@@ -25,6 +25,7 @@
 		0478690322CF2D4100D616D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0478690622CF2D4100D616D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0478690822CF2D4100D616D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E9B3FA22F0261E00295311 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		04F6E75322CEE38C00A4F5B5 /* CustomAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F6E75622CEE38C00A4F5B5 /* CustomAlertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomAlertController.h; sourceTree = "<group>"; };
 		04F6E75722CEE38C00A4F5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		04F6E74922CEE38C00A4F5B5 = {
 			isa = PBXGroup;
 			children = (
+				04E9B3FA22F0261E00295311 /* README.md */,
 				04D7CFB322CEFDCB00AA6E5A /* Source */,
 				04F6E75522CEE38C00A4F5B5 /* CustomAlertController */,
 				047868FB22CF2D4000D616D1 /* Example */,

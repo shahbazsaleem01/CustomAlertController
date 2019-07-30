@@ -34,28 +34,30 @@ But wait, there's more!
 You can update following properties and customize
 
 ```swift
-// create a new style
-public var backgroundColor = UIColor(hex: "949494")
-public var backgroundAlpha: CGFloat = 0.75
+lazy public var backgroundColor = UIColor(hex: "949494")
+lazy public var backgroundAlpha: CGFloat = 0.75
 
-public var contentBackgroundColor = UIColor(hex: "ebebeb")
-public var contentBackgroundCornerRadius: CGFloat = 10
+lazy public var contentBackgroundColor = UIColor(hex: "ebebeb")
+lazy public var contentBackgroundCornerRadius: CGFloat = 10
 
-public var titleTextColor: UIColor = UIColor(hex: "211c45")
-public var titleTextFont: UIFont =  UIFont.boldSystemFont(ofSize: 15)
+lazy public var titleTextColor: UIColor = UIColor(hex: "211c45")
+lazy public var titleTextFont: UIFont =  UIFont.boldSystemFont(ofSize: 15)
+lazy public var spacingAfterTitle: CGFloat = 10
 
-public var messageTextColor: UIColor = UIColor(hex: "211c45")
-public var messageTextFont: UIFont = UIFont.systemFont(ofSize: 14)
+lazy public var messageTextColor: UIColor = UIColor(hex: "211c45")
+lazy public var messageTextFont: UIFont = UIFont.systemFont(ofSize: 14)
+lazy public var spacingAfterMessage: CGFloat = 10
 
-public var defaultButtonTextColor: UIColor = UIColor(hex: "ffffff")
-public var defaultButtonBackgroundColor: UIColor = UIColor(hex: "f92f57")
-public var defaultButtonCornerRadius: CGFloat = 5
-public var defaultButtonFont: UIFont = UIFont.systemFont(ofSize: 14)
+lazy public var defaultButtonTextColor: UIColor = UIColor(hex: "ffffff")
+lazy public var defaultButtonBackgroundColor: UIColor = UIColor(hex: "f92f57")
+lazy public var defaultButtonCornerRadius: CGFloat = 5
+lazy public var defaultButtonFont: UIFont = UIFont.systemFont(ofSize: 14)
+lazy public var spacingAfterDefaultButton: CGFloat = 10
 
-public var destructiveButtonTextColor: UIColor = UIColor(hex: "757575")
-public var destructiveButtonBackgroundColor: UIColor = UIColor(hex: "cccccc")
-public var destructiveButtonCornerRadius: CGFloat = 5
-public var destructiveButtonFont: UIFont = UIFont.systemFont(ofSize: 14)
+lazy public var destructiveButtonTextColor: UIColor = UIColor(hex: "757575")
+lazy public var destructiveButtonBackgroundColor: UIColor = UIColor(hex: "cccccc")
+lazy public var destructiveButtonCornerRadius: CGFloat = 5
+lazy public var destructiveButtonFont: UIFont = UIFont.systemFont(ofSize: 14)
 ```
 
 You can also create a sub-class and use that Globally in your app, below is sample
