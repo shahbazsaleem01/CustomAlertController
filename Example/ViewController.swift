@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         
         let vc = GlobalAlertController(title: "Custom Alert Controller", message: "Thank you for using custom alert controller, Hopefully you found it a smart help.\nDo let us know if you need any other feature.")
         vc.addAction(BeAlertAction(title: "Got it", style: .default, handler: { (action) in
-            
+
         }))
         
         
@@ -51,6 +51,9 @@ class GlobalAlertController: BeAlertController{
         //Do your customizations here
         defaultButtonBackgroundColor = .blue
         defaultButtonTextColor = .white
+        spacingAfterMessage = 30
+        spacingAfterTitle = 30
+        spacingAfterDefaultButton = 15
     }
     
     required init?(coder aDecoder: NSCoder) {

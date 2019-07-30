@@ -18,14 +18,17 @@ open class BeAlertController: UIViewController {
     
     lazy public var titleTextColor: UIColor = UIColor(hex: "211c45")
     lazy public var titleTextFont: UIFont =  UIFont.boldSystemFont(ofSize: 15)
+    lazy public var spacingAfterTitle: CGFloat = 10
     
     lazy public var messageTextColor: UIColor = UIColor(hex: "211c45")
     lazy public var messageTextFont: UIFont = UIFont.systemFont(ofSize: 14)
+    lazy public var spacingAfterMessage: CGFloat = 10
     
     lazy public var defaultButtonTextColor: UIColor = UIColor(hex: "ffffff")
     lazy public var defaultButtonBackgroundColor: UIColor = UIColor(hex: "f92f57")
     lazy public var defaultButtonCornerRadius: CGFloat = 5
     lazy public var defaultButtonFont: UIFont = UIFont.systemFont(ofSize: 14)
+    lazy public var spacingAfterDefaultButton: CGFloat = 10
     
     lazy public var destructiveButtonTextColor: UIColor = UIColor(hex: "757575")
     lazy public var destructiveButtonBackgroundColor: UIColor = UIColor(hex: "cccccc")
@@ -49,7 +52,7 @@ open class BeAlertController: UIViewController {
     
     //init?(coder aDecoder: NSCoder) called only when you create your views from storyboard. It will never be invoked since we are going with no-storyboard so we can safely fatal out.
     
-    public required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -129,11 +132,11 @@ open class BeAlertController: UIViewController {
         view.addSubview(stackView)
         stackView.axis = .vertical
         stackView.alignment = .center
-        stackView.setCustomSpacing(10, after: lblTitle)
+        stackView.setCustomSpacing(spacingAfterTitle, after: lblTitle)
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackViewBackground.translatesAutoresizingMaskIntoConstraints = false
-//        stackViewBackgroundShodow.translatesAutoresizingMaskIntoConstraints = false
+
         NSLayoutConstraint.activate([
             stackView.widthAnchor.constraint(equalToConstant: 280),
             stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
@@ -141,19 +144,19 @@ open class BeAlertController: UIViewController {
             stackViewBackground.centerYAnchor.constraint(equalTo: stackView.centerYAnchor),
             stackViewBackground.centerXAnchor.constraint(equalTo: stackView.centerXAnchor),
             stackViewBackground.widthAnchor.constraint(equalTo: stackView.widthAnchor, constant: 20),
-            stackViewBackground.heightAnchor.constraint(equalTo: stackView.heightAnchor, constant: 20),
-//            stackViewBackgroundShodow.centerYAnchor.constraint(equalTo: stackView.centerYAnchor),
-//            stackViewBackgroundShodow.centerXAnchor.constraint(equalTo: stackView.centerXAnchor),
-//            stackViewBackgroundShodow.widthAnchor.constraint(equalTo: stackViewBackground.widthAnchor),
-//            stackViewBackgroundShodow.heightAnchor.constraint(equalTo: stackViewBackground.heightAnchor)
+            stackViewBackground.heightAnchor.constraint(equalTo: stackView.heightAnchor, constant: 20)
             ])
         
         
         if let action = (actions.filter{$0.style == BeAlertAction.Style.default}).first{
             
             defaultButton.setTitle(action.title, for: .normal)
+        
+            if let lastView = stackView.arrangedSubviews.last{
+                stackView.setCustomSpacing(spacingAfterMessage, after: lastView)
+            }
+            
             stackView.addArrangedSubview(defaultButton)
-            stackView.setCustomSpacing(10, after: lblMessage)
             
             defaultButton.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate([
@@ -172,9 +175,14 @@ open class BeAlertController: UIViewController {
             destructiveButton.layer.cornerRadius = destructiveButtonCornerRadius
             destructiveButton.titleLabel?.font = destructiveButtonFont
             destructiveButton.clipsToBounds = true
-            stackView.addArrangedSubview(destructiveButton)
-            stackView.setCustomSpacing(10, after: defaultButton)
+
+            if let lastView = stackView.arrangedSubviews.last{
+                let spacing = (lastView == lblMessage) ? spacingAfterMessage : spacingAfterDefaultButton
+                stackView.setCustomSpacing(spacing, after: lastView)
+            }
             
+            stackView.addArrangedSubview(destructiveButton)
+
             destructiveButton.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate([
                 destructiveButton.widthAnchor.constraint(equalToConstant: 150),

@@ -13,7 +13,6 @@ CustomKeyboardTextField provides easy way to make Customized Alert.
 
   s.author             = { "Shahbaz Saleem" => "shahbaz@saleems.me" }
   s.social_media_url   = "https://shahbaz.saleems.me"
-  s.platform     = :ios
   s.platform     = :ios, "11.0"
 
   s.source       = { :git => "https://github.com/shahbazsaleem01/CustomAlertController.git", :tag => "#{s.version}" }

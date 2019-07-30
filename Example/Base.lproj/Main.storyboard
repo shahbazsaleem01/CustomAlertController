@@ -26,8 +26,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09d-he-dnd">
-                                <rect key="frame" x="130" y="463" width="154" height="30"/>
-                                <state key="normal" title="Show InApp Controller"/>
+                                <rect key="frame" x="103" y="463" width="208" height="30"/>
+                                <state key="normal" title="Show Global Customized Alert"/>
                                 <connections>
                                     <action selector="didSelectShowCustomizedController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cxf-RP-egf"/>
                                 </connections>
